@@ -1,0 +1,12 @@
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.name {
+	font-size: 18px;
+	text-align: center;
+	text-transform: capitalize;
+	opacity: 0;
+}

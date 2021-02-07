@@ -1,0 +1,22 @@
+.card {
+	padding: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.card img {
+	object-fit: cover;
+	object-position: center;
+	max-width: 200px;
+	min-height: 200px;
+	width: 100%;
+}
+
+.card:hover p {
+	opacity: 1;
+}
+
+.Link {
+	text-decoration: none;
+	color: black;
+}
