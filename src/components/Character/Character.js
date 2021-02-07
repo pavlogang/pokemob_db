@@ -7,12 +7,12 @@ const Character = ({ children, url }) => {
 	const id = arr[arr.length - 2];
 
 	return (
-		<a href="#" className="Link">
+		<Link to={`/character/${id}`} className="Link">
 			<div className="card">
 				{children}
 				<img src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`} alt="" />
 			</div>
-		</a>
+		</Link>
 	);
 };
 

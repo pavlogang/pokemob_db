@@ -11,11 +11,15 @@ export default class PokemonService {
 		}
 		return await res.json();
 	};
-	
+
 	getAllCharacters = async () => {
 		const res = await this.getResource(`pokemon?offset=5&limit=30`);
 		// console.log(res.results);
-		return res.results
+		return res.results;
 	};
-	
+
+	getInfoCharacter = async (id) => {
+		const res = await this.getResource(`pokemon/${id}`);
+		return res;
+	};
 }

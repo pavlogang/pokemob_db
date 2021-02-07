@@ -6,7 +6,7 @@ import "../SearchPanel/SearchPanel.css";
 const SearchPanel = (props) => {
 	return (
 	<Container>	
-		<input type="text" className="search" onChange={props.onChange} />
+		<input type="text" placeholder="Enter your desired name" className="search" onChange={props.onChange} />
 	</Container>
 	)
 };

@@ -2,6 +2,11 @@
 	padding: 10px;
 	position: relative;
 	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.card:hover {
+	box-shadow: -1px 0px 38px -3px rgba(0, 0, 0, 0.75);
 }
 
 .card img {
@@ -14,6 +19,7 @@
 
 .card:hover p {
 	opacity: 1;
+	font-weight: 500;
 }
 
 .Link {
