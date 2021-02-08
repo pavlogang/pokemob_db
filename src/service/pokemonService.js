@@ -22,4 +22,9 @@ export default class PokemonService {
 		const res = await this.getResource(`pokemon/${id}`);
 		return res;
 	};
+	
+	getInfoAbility = async (id) => {
+		const res = await this.getResource(`ability/${id}`);
+		return res;
+	}
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Service from "../../service/pokemonService";
 import { useHistory, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Spinner from './../Spinner/Spinner';
 import "../CharacterPage/CharacterPage.css";
 
 const PokemonService= new Service();
@@ -18,7 +19,11 @@ const CharacterPage = () => {
 				setInfo(res);
 			});
 		}, []);
-		
+	
+	console.log(info);	
+	if (Object.keys(info).length == 0) {
+		return <Spinner />;
+	}	
 	
 	return (
 		<div className="container">

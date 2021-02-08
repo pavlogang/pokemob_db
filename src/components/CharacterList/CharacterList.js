@@ -3,10 +3,10 @@ import Character from "../Character/Character";
 import "../CharacterList/CharacterList.css";
 
 const CharacterList = ({ characters, searchValue }) => {
-	// const arr = characters !== "" ? characters.filter(({ name }) => name.toLowerCase().includes(searchValue.toLowerCase())) : characters;
+	const arr = characters !== "" ? characters.filter(({ name }) => name.toLowerCase().includes(searchValue.toLowerCase())) : characters;
 	return (
 		<div className="wrap">
-			{characters.map((el, index) => {
+			{arr.map((el, index) => {
 				return (
 					<Character key={index} url={el.url}>
 						<p className="name">{el.name}</p>
